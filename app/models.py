@@ -15,6 +15,7 @@ class User(UserMixin, db.Model):
     email= db.Column(db.String(255), unique=True, index= True)
     user_password=db.Column(db.String(255))
     bio=db.Column(db.String(255))
+    phone_number=db.Column(db.String(20))
     profile_pic_path = db.Column(db.String())
 
 

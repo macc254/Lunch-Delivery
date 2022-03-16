@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block content %}
+
+<div class="container-fluid" style="background-image:url('../static/images/su1.jpeg'); background-repeat:no-repeat;background-size: cover; height:600px; text-align:center;">
+    <div class="row col-md-3" style="margin-left:430px;margin-top:50px; color:white;" >
+    {{wtf.quick_form(registration_form)}}
+    </div>
+
+</div>
+
+{% endblock %}

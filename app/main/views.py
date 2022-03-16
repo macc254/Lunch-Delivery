@@ -2,7 +2,7 @@ from flask import render_template,redirect,url_for,abort,request,flash
 from idna import valid_string_length
 from . import main
 # from ..email import mail_message
-# from ..requests import get_quote
+from ..requests import get_meal
 # from .forms import CommentForm, UpdateComment,UpdateProfile,BlogForm,SubscribeForm,UpdateBlog
 from ..models import User
 from flask_login import login_required, current_user
@@ -14,12 +14,9 @@ def index():
     '''
     View root page function that returns the index page and its data
     '''
-    # quote = get_quote()
-    # blogs = Blogs.query.all()
-
-
+    meal = get_meal()
     title = 'Home - Welcome to my Personal Blog Website'    
-    return render_template('index.html')   
+    return render_template('index.html',title= title, meal=meal)   
 
 # @main.route('/blog/',methods = ['GET','POST'])
 # @login_required

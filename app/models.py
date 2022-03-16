@@ -35,3 +35,16 @@ class User(UserMixin,db.Model):
     def __repr__(self):
         return f'User {self.username}'
     
+
+class Meal:
+    '''
+  Quote class to define Quote Objects
+    '''
+    def __init__(self,strMeal,strCategory,strInstructions,strMealThumb,strYoutube):
+        self.strMeal = strMeal
+        self.strCategory = strCategory
+        self.strInstructions = strInstructions
+        self.strMealThumb = strMealThumb
+        self.strYoutube = strYoutube
+
+    

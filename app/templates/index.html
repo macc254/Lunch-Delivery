@@ -1,0 +1,37 @@
+{% extends 'base.html'%}
+
+<!-- Content block -->
+{% block content %}
+<div class="container-fluid" style="background-image:url('../static/images/FOOD2.jpg'); background-repeat:no-repeat;background-size: cover; height:587px;">
+    <div class=" navbar navbar-inverse " role="navigation " style="background-color: transparent; color: white; ">
+
+        <div class="navbar-collapse " style="background-color:transparent; color: white; " id=" navbar ">
+
+            <ul class="nav navbar-nav navbar-right navbar navbar-inverse " style="background-color: transparent;color: white; ">
+                <li>
+                    <a style=" color:white; font-size:20px " class="nav-link " href="{{url_for( 'main.index')}} "> <b>Jada Lunch Delivery</b></a>
+                </li>
+                <li class="nav-item ">
+                    <a style=" color:white;font-size:15px  " class="nav-link " href="{{url_for( 'main.index')}} "><b>Products</b></a>
+                </li>
+                <li class="nav-item ">
+                    <a style=" color:white;font-size:15px  " class="nav-link " href="{{url_for( 'main.index')}} "><b>Checkout</b></a>
+                </li>
+                <li class="nav-item ">
+                    <a style=" color:#FECE22;font-size:15px  " class="nav-link " href="{{url_for( 'main.index')}} "><b>Login</b></a>
+                </li>
+                <li class="nav-item ">
+                    <a style=" color:#FECE22; font-size:15px " class="nav-link " href="{{url_for( 'main.index')}} "><b>Signup</b></a>
+                </li>
+            </ul>
+        </div>
+    </div><br><br><br><br><br><br>
+    <p style=" color:white; margin-left: 670px;font-size:25px">Order Your <br> <b>Favorite Meals</b></p>
+
+    <p id='order'><a style="background-color: #FECE22; color: black; margin-left: 670px;" href=" {{url_for('main.index')}} " class="btn" role="button"><b>Order Meal</b></a></p>
+
+    <h3 style="color: #FECE22; margin-left: 670px;">Meal:</h3>
+    {% for m in meal %}
+    <p style="color: #b5179e">{{m.category}}</p>
+    {% endfor %}
+</div> {% endblock %}

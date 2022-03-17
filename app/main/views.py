@@ -1,3 +1,12 @@
+from ..models import User
+from .. import db, photos
+
+
+
+@main.route('/')
+def index():
+    
+    return render_template('home.html', name='')
 from flask import render_template,redirect,url_for,abort,request,flash
 from idna import valid_string_length
 from . import main
@@ -15,7 +24,7 @@ def index():
     View root page function that returns the index page and its data
     '''
     meal = get_meal()
-    title = 'Home - Welcome to my Personal Blog Website'    
+    title = 'Home - Welcome to Jada Lunch Delivery Website'    
     return render_template('index.html',title= title, meal=meal)   
 
 # @main.route('/blog/',methods = ['GET','POST'])

@@ -1,0 +1,25 @@
+    <div class="navbar-collapse " style="background-color:transparent; color: white; " id=" navbar ">
+
+        <ul class="nav navbar-nav navbar-right navbar navbar-inverse " style="background-color: transparent;color: white; ">
+            <li>
+                <a style=" color:white; font-size:20px " class="nav-link " href="{{url_for( 'main.index')}} "> <b>Jada Lunch Delivery</b></a>
+            </li>
+            <li class="nav-item ">
+                <a style=" color:white;font-size:15px" class="nav-link " href="{{url_for( 'main.index')}} "><b>Products</b></a>
+            </li>
+            <li class="nav-item ">
+                <a style=" color:white;font-size:15px" class="nav-link" href="{{url_for( 'main.index')}} "><b>Checkout</b></a>
+            </li>
+            <li class="nav-item ">
+                <a style=" color:#FECE22;font-size:15px" class="nav-link " href="{{url_for('auth.login')}}"><b>Login</b></a>
+            </li>
+            {% if user==current_user %}
+            <li class="nav-item" >
+                <a href="{{url_for('auth.logout')}}" class="nav-ling" >Log Out</a>
+            </li>
+            {% endif %}
+            <li class="nav-item ">
+                <a style=" color:#FECE22; font-size:15px " class="nav-link " href="{{url_for('auth.register')}}"><b>Signup</b></a>
+            </li>
+        </ul>
+    </div>

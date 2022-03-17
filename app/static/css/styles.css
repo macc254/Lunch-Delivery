@@ -1,0 +1,13 @@
+*{
+    background-color: black;
+    color: white;
+}
+
+.restaurants{
+    display: flex;
+    justify-content: space-between;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+}

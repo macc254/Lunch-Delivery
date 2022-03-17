@@ -4,9 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/styles.css')}}">
+
     <title>Menu</title>
 </head>
-<body>
-    
+<body style="background-color: black;">
+
+    <h1 style="text-align: center; color: white; ">MENU</h1>
+
+    <div class="menu" style="display: flex; justify-content: space-between; margin-top: 15%; margin-left: 4em; margin-right: 4em;">
+        <div class="meal1 " style="box-shadow:gold 2,2,2,2;">
+            <img src="../static/images/us1.png" alt="">
+            <p style="color: white;">Rice and fish stew</p>
+            <p style="color: white;">Price: ksh 650</p>
+        </div>
+
+        <div class="meal2">
+            <img src="../static/images/u&s.jpeg" alt="">
+            <p style="color: white;">Ugali and Beef stew</p>
+            <p style="color: white;">Price: ksh 550</p>
+        </div>
+
+        <div class="meal3">
+            <img src="../static/images/cb1.png" alt="">
+            <p style="color: white;">Chapati and beens stew</p>
+            <p style="color: white;">Price: ksh 150</p>
+        </div>
+    </div>
+
 </body>
 </html>

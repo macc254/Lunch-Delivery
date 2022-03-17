@@ -1,3 +1,4 @@
+
 from . import db
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import UserMixin
@@ -43,7 +44,7 @@ class Meal(db.Model):
     meal_name=db.Column(db.String())
     meal_price=db.Column(db.Integer)
     user_id=db.Column(db.Integer, db.ForeignKey('users.id'))
-    
+
 class Order(db.Model):
     __tablename__='order'
     id=db.Column(db.Integer, primary_key=True)

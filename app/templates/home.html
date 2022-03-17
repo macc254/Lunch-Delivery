@@ -1,5 +1,17 @@
+
 {% extends 'base.html'%}
+
+<!-- Content block -->
 {% block content %}
-<a href="{{url_for('auth.login')}}">login</a>
-<a href="{{url_for('auth.register')}}">Register</a>
+<body class="container-fluid" style="background-image:url('../static/images/FOOD2.jpg'); background-repeat:no-repeat;background-size: cover;">
+<br><br><br><br><br><br>
+    <p style=" color:white; margin-left: 670px;font-size:25px">Order Your <br> <b>Favorite Meals</b></p>
+
+    <p id='order'><a style="background-color: #FECE22; color: black; margin-left: 670px;" href=" {{url_for('main.index')}} " class="btn" role="button"><b>Order Meal</b></a></p>
+
+    <h3 style="color: #FECE22; margin-left: 670px;">Meal:</h3>
+    {% for m in meal %}
+    <p style="color: #b5179e">{{m.category}}</p>
+    {% endfor %}
+</body>
 {% endblock %}

@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<body style="background-color: black;">
+    <h1 style="text-align: center; color: white;">RESTAURANTS</h1>
+    <div class="restaurants" style="display: flex; flex-wrap: wrap; justify-content: space-between; margin-left: 3em; margin-right: 3em; margin-top: 5%;">
+        <div class="restaurant1">
+            <img src="../static/images/rest1.jpg" alt="restaurant1" height="300" width="300">
+            <a href="http://127.0.0.1:5000/menu"><p>HONET AND DOUGH GORMET CAFE</p></a>
+        </div>
+        <div class="restaurant2">
+            <img src="../static/images/rest2.jpg" alt="rest2" height="300" width="300">
+            <a href="http://127.0.0.1:5000/menu"><p>CANIVORE RESTAURANT</p></a>
+        </div>
+        <div class="restaurant3">
+            <img src="../static/images/rest3.jpg" alt="rest3" height="300" width="300">
+            <a href="http://127.0.0.1:5000/menu"><p>AIRPORTVIEW RESTAURANT</p></a>
+        </div>
+    </div>
+    <div class="restaurants2" style="display: flex; flex-wrap: wrap; justify-content: space-between; margin-left: 3em; margin-right: 3em;" >
+        <div class="restaurant1">
+            <img src="../static/images/rest1.jpg" alt="restaurant1" height="300" width="300">
+            <a href="http://127.0.0.1:5000/menu"><p>HONET AND DOUGH GORMET CAFE</p></a>
+        </div>
+        <div class="restaurant2">
+            <img src="../static/images/rest2.jpg" alt="rest2" height="300" width="300">
+            <a href="http://127.0.0.1:5000/menu"><p>CANIVORE RESTAURANT</p></a>
+        </div>
+        <div class="restaurant3">
+            <img src="../static/images/rest3.jpg" alt="rest3" height="300" width="300">
+            <a href="http://127.0.0.1:5000/menu"><p>AIRPORTVIEW RESTAURANT</p></a>
+        </div>
+    </div>
+</body>
+{% endblock %}

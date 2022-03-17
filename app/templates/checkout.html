@@ -1,0 +1,51 @@
+{% extends 'base.html'%}
+<!-- Content block -->
+{% block content %}
+<body class="container-fluid" style="background-image:url('../static/images/chekout.jpg'); background-repeat:no-repeat;background-size: cover; height:1000px;">
+    <!-- <div class=" navbar navbar-inverse " role="navigation " style="background-color: transparent; color: white; ">
+        <div class="navbar-collapse " style="background-color:transparent; color: white; " id=" navbar ">
+            <ul class="nav navbar-nav navbar-right navbar navbar-inverse " style="background-color: transparent;color: white; ">
+                <li>
+                    <a style=" color:white; font-size:20px " class="nav-link " href="{{url_for( 'main.index')}} "> <b>Jada Lunch Delivery</b></a>
+                </li>
+                <li class="nav-item ">
+                    <a style=" color:white;font-size:15px  " class="nav-link " href="{{url_for( 'main.index')}} "><b>Products</b></a>
+                </li>
+                <li class="nav-item ">
+                    <a style=" color:white;font-size:15px  " class="nav-link " href="{{url_for( 'main.index')}} "><b>Checkout</b></a>
+                </li>
+                <li class="nav-item ">
+                    <a style=" color:#FECE22;font-size:15px  " class="nav-link " href="{{url_for( 'main.index')}} "><b>Login</b></a>
+                </li>
+                <li class="nav-item ">
+                    <a style=" color:#FECE22; font-size:15px " class="nav-link " href="{{url_for( 'main.index')}} "><b>Signup</b></a>
+                </li>
+            </ul>
+        </div> -->
+        <!-- <center><u style="color:#FECE22"><h1>CHECKOUT PAGE</h1></u></center> -->
+    <!-- </div><br><br><br> -->
+    <div class="container" style="border:#FECE22 2px solid; border-radius:30px; margin-right: 300px; padding-bottom: 100px;">
+        <div class="row">
+            <h1 style="font-weight:900px; color:white;">My Orders:</h1>
+            <div class="col-md-3">
+                <p style="text-align:center; text-decoration:none; color:white; font-size:15px  ">Meal</p>
+                <p style="text-align:center; text-decoration:none; color:white; font-size:15px  ">Meal</p>
+                <p style="text-align:center; text-decoration:none; color:white; font-size:15px  ">Meal</p>
+                <p style="text-align:center; text-decoration:none; color:white; font-size:15px  ">Meal</p>
+                <p style="text-align:center; text-decoration:none; color:white; font-size:15px  ">TOTAL</p>
+            </div>
+            <div class="col-md-3">
+                <p style="text-align:center; text-decoration:none; color:white; font-size:15px  ">Price</p>
+                <p style="text-align:center; text-decoration:none; color:white; font-size:15px  ">Price</p>
+                <p style="text-align:center; text-decoration:none; color:white; font-size:15px  ">Price</p>
+                <p style="text-align:center; text-decoration:none; color:white; font-size:15px  ">Price</p>
+                <p style="text-align:center; text-decoration:none; color:white; font-size:15px  ">KSH##</p>
+            </div>
+        </div>
+    </div>
+   <center> <button style=" color:black; font-size:15px;background-color:#FECE22; margin-top:50px;border-radius: 30px;border:none; padding:20px;" class="button" href="{{url_for( 'main.index')}} "><b>Checkout</b></button>
+   </center>
+</div>
+</body>
+ {% endblock %}
+

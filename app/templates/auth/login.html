@@ -3,7 +3,7 @@
 
 
 {% block content %}
-<div class="container-fluid" style="background-image:url('../static/images/su1.jpeg'); background-repeat:no-repeat;background-size: cover; height:600px; text-align:center;">
+<body class="container-fluid" style="background-image:url('../static/images/su1.jpeg'); background-repeat:no-repeat;background-size: cover; height:600px; text-align:center;">
     <div class="row col-md-3" style="margin-left:430px;margin-top:50px; color:white;" >
     
 {% for message in get_flashed_messages() %}
@@ -23,5 +23,5 @@
     <button class="btn" ><a href="{{url_for('auth.register')}}" style="font-size:22px;" >Sign up here!</a>
 
 </div>
-</div>
+</body>
 {% endblock %}
